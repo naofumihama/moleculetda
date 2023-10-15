@@ -47,7 +47,7 @@ def read_data(
             else:
                 return make_supercell(xyz, lattice_matrix, size), weights
         else:
-            return read_cif(filename)[1]  # xyz coordinates
+            return read_cif(filename, weighted=weighted)[1]  # xyz coordinates
     elif filename.suffix == ".npy":
         return np.load(filename)
     else:
