@@ -83,4 +83,4 @@ def plot_pers_images(images, arr_dgms):
     plt.colorbar(twod, ax=axes[1])
     plt.tight_layout()
     plt.show()
-    return None
+    return fig, axes
