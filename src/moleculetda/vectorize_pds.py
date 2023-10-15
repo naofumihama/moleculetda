@@ -82,11 +82,11 @@ class PersImage(TransformerMixin):
         self.spread = spread
         self.nx_b, self.ny_p = pixels
 
-        logger.debug(
-            'PersImage(pixels={}, spread={}, specs={}, kernel_type="{}", weighting_type="{}")'.format(
-                pixels, spread, specs, kernel_type, weighting_type
-            )
-        )
+        #logger.debug(
+        #    'PersImage(pixels={}, spread={}, specs={}, kernel_type="{}", weighting_type="{}")'.format(
+        #        pixels, spread, specs, kernel_type, weighting_type
+        #    )
+        #)
 
     def transform(self, diagrams: np.array):
         """Convert diagram or list of diagrams to a persistence image.
