@@ -99,7 +99,7 @@ class PersImage(TransformerMixin):
             return np.zeros((self.nx_b, self.ny_p))
         # if first entry of first entry is not iterable, then diagrams is singular and we need to make it a list of diagrams
         try:
-            singular = not isinstance(diagrams[0][0], collections.Iterable)
+            singular = not isinstance(diagrams[0][0], collections.abc.Iterable)
         except IndexError:
             singular = False
 
